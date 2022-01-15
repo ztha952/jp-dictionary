@@ -6,8 +6,71 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.logo{
+  width: 60px;
+  height: 60px;
+  
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 100%;
+  text-align: left;
+  border: black ridge 1px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  /* From https://css.glass */
+background: rgba(242, 243, 174, 0.88);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(242, 243, 174, 0.3);
+}
+.wrap{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.search{
+   width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  margin-bottom: 10px;
+}
+.search:focus{
+  color: #00B4CC;
+}
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn{
+  width: 20px;
+  height: 25px;
 }
