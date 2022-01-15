@@ -26,7 +26,7 @@ export default function App() {
         onChange={(event) => setQuery(event.target.value)}
       />
       <button onClick={reset} class="searchButton">
-        <img className='btn' src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png"/>
+        <img className='btn' src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png" alt='icon'/>
      </button>
       </div>
       {Data.filter((post) => {
