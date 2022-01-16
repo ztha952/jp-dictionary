@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/jp-dictionary/static/css/main.d6b8f3ee.css",
-    "main.js": "/jp-dictionary/static/js/main.62df211e.js",
+    "main.js": "/jp-dictionary/static/js/main.21271bb2.js",
     "static/media/syougatsu_hatsuhinode_2022.png": "/jp-dictionary/static/media/syougatsu_hatsuhinode_2022.876b86f498c7874ce2d0.png",
     "index.html": "/jp-dictionary/index.html",
     "main.d6b8f3ee.css.map": "/jp-dictionary/static/css/main.d6b8f3ee.css.map",
-    "main.62df211e.js.map": "/jp-dictionary/static/js/main.62df211e.js.map"
+    "main.21271bb2.js.map": "/jp-dictionary/static/js/main.21271bb2.js.map"
   },
   "entrypoints": [
     "static/css/main.d6b8f3ee.css",
-    "static/js/main.62df211e.js"
+    "static/js/main.21271bb2.js"
   ]
 }
