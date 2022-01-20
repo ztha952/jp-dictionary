@@ -59,12 +59,12 @@ export default function App() {
               return post;
             }else if (romaji.includes(query)) {
               return post;
+            }else if (meaning_mm.includes(query)) {
+              return post;
             }else if (kana.includes(query)) {
               return post;
-            } else if (meaning_mm.includes(query)) {
-              return post;
-            }
-          })
+            }}
+          )
           .map((post, index) => {
             const { kana, kanji, meaning_mm } = post;
             return (
