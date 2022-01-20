@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useRef, useEffect  } from 'react';
-import logo from './assets/syougatsu_hatsuhinode_2022.png'
+import logo from './assets/22309611.jpg'
 import './index.css';
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
       .get('https://ztha952.github.io/json-test/Data/mock.json')
       .then((res) => {
         setUrl_(res.data);
-      }) // format
+      }) 
       .catch((err) => {
         console.log('error: ', err);
       });
@@ -30,7 +30,7 @@ export default function App() {
   return (
     <div className='main'>
     <div className='fg'>
-    <img className='logo' src={logo} alt='2022' />
+    <img className='logos' src={logo} alt='2022' />
     </div>
     
     <h2>Japan-Myanmar Dictionary</h2>
@@ -44,20 +44,24 @@ export default function App() {
           }
         }}
       />
-      <button onClick={reset} class="searchButton">
+      <button onClick={reset} className="searchButton">
         <img className='btn' src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png" alt='icon'/>
      </button>
       </div>
       {url_ &&
         url_
           .filter((post) => {
+            const { romaji, kana, kanji, meaning_mm } = post;
+            
             if (query === '') {
               return;
-            } else if (post.romaji.includes(query)) {
+            } else if (kanji.includes(query)) {
               return post;
-            } else if (post.kana.includes(query)) {
+            }else if (romaji.includes(query)) {
               return post;
-            } else if (post.meaning_mm.includes(query)) {
+            }else if (kana.includes(query)) {
+              return post;
+            } else if (meaning_mm.includes(query)) {
               return post;
             }
           })
@@ -66,8 +70,8 @@ export default function App() {
             return (
               <div className="box" key={index}>
                 <h1> {kanji} </h1>
-                <h2> {kana} </h2>
-                <h2> {meaning_mm} </h2>
+                <p> {kana} </p>
+                <h5> {meaning_mm} </h5>
               </div>
             );
           })}
