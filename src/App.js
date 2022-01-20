@@ -57,7 +57,9 @@ export default function App() {
               return post;
             } else if (post.kana.includes(query)) {
               return post;
-            } else if (post.meaning_mm.includes(query)) {
+            }else if (post.kanji.includes(query)) {
+              return post;
+            }else if (post.meaning_mm.includes(query)) {
               return post;
             }
           })
