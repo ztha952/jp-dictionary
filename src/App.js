@@ -33,7 +33,7 @@ export default function App() {
     <img className='logos' src={logo} alt='2022' />
     </div>
     
-    <h2>Japan-Myanmar Dictionary</h2>
+    <h2>Online Japan-Myanmar Dictionary</h2>
    
     <div className='wrap'>
       <input className='search'
